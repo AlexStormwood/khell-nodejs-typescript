@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Hello, Khell!",
   "main": "dist/index.js",
+  "type": "module",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
@@ -11,7 +12,7 @@
     }
   },
   "scripts": {
-    "dev": "ts-node ./src/index.ts",
+    "dev": "tsx ./src/index.ts",
     "build:code": "tsc"
   },
   "keywords": [],
@@ -26,7 +27,7 @@
   },
   "devDependencies": {
     "@types/node": "^22.8.1",
-    "ts-node": "^10.9.2",
+    "tsx": "^4.19.2",
     "typescript": "^5.6.3"
   }
 }
