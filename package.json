@@ -1,0 +1,32 @@
+{
+  "name": "khell-nodejs-typescript",
+  "version": "1.0.0",
+  "description": "Hello, Khell!",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "dev": "ts-node ./src/index.ts",
+    "build:code": "tsc"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Alex Stormwood",
+    "email": "alex@bigfootds.com",
+    "url": "https://github.com/AlexStormwood"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.8.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
