@@ -12,7 +12,8 @@
     }
   },
   "scripts": {
-    "dev": "tsx ./src/index.ts",
+    "dev:tsnode": "node --loader ts-node/esm src/index.ts",
+    "dev:tsx": "tsx ./src/index.ts",
     "build:code": "pkgroll"
   },
   "keywords": [],
@@ -28,6 +29,7 @@
   "devDependencies": {
     "@types/node": "^22.8.1",
     "pkgroll": "^2.5.1",
+    "ts-node": "^10.9.2",
     "tsx": "^4.19.2",
     "typescript": "^5.6.3"
   }
