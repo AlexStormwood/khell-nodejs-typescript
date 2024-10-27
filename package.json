@@ -2,18 +2,18 @@
   "name": "khell-nodejs-typescript",
   "version": "1.0.0",
   "description": "Hello, Khell!",
-  "main": "dist/index.js",
+  "main": "dist/index.mjs",
   "type": "module",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "default": "./dist/index.js"
+      "default": "./dist/index.mjs"
     }
   },
   "scripts": {
     "dev": "tsx ./src/index.ts",
-    "build:code": "tsc"
+    "build:code": "pkgroll"
   },
   "keywords": [],
   "author": {
@@ -27,6 +27,7 @@
   },
   "devDependencies": {
     "@types/node": "^22.8.1",
+    "pkgroll": "^2.5.1",
     "tsx": "^4.19.2",
     "typescript": "^5.6.3"
   }
